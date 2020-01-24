@@ -14,7 +14,7 @@ class Adder extends Arithmetic{
 }
 //Write your code here
 
-public class Solution{
+public class JavaInheritanceII{
     public static void main(String []args){
         // Create a new Adder object
         Adder a = new Adder();

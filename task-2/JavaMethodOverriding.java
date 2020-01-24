@@ -24,7 +24,7 @@ class Soccer extends Sports{
 
 }
 
-public class Solution{
+public class JavaMethodOverriding{
 	
     public static void main(String []args){
         Sports c1 = new Sports();
