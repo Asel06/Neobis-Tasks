@@ -1,6 +1,7 @@
+import java.io.*;
 public class WelcometoJava {
-	public void main(String[] args) {
-		system.out.println("Hello, world.");
-		system.out.println("Hello, Java.");
+	public static void main(String[] args) {
+		System.out.println("Hello, world.");
+		System.out.println("Hello, Java.");
 	}
 }

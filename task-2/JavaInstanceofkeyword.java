@@ -1,10 +1,11 @@
 import java.util.*;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 class Student{}
 class Rockstar{   }
 class Hacker{}
-
 
 public class JavaInstanceofkeyword{
 	
@@ -24,7 +25,7 @@ public class JavaInstanceofkeyword{
    }
 
    public static void main(String []args){
-      ArrayList mylist = new ArrayList();
+      ArrayList<Object> mylist = new ArrayList<>();
       Scanner sc = new Scanner(System.in);
       int t = sc.nextInt();
       for(int i=0; i<t; i++){
