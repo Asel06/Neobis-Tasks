@@ -1,0 +1,1 @@
+SELECT * from FruitShop.products;
