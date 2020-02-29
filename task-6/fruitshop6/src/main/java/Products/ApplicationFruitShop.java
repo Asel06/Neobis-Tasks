@@ -1,13 +1,13 @@
-package Entity;
+package Products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class FruitApplication {
+public class ApplicationFruitShop {
 
     public static void main(String... args) {
-        SpringApplication.run(FruitApplication.class, args);
+        SpringApplication.run(ApplicationFruitShop.class, args);
     }
 }

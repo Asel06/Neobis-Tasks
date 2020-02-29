@@ -1,10 +1,9 @@
-package Entity;
+package Products;
 
-import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(path = "/products")
@@ -19,21 +18,20 @@ public class ProductsController {
     }
 
 
-
     @RequestMapping(value = "/addProduct", method = RequestMethod.POST)
-    public @ResponseBody String addNewProduct (@RequestParam String nameOfFruit,
-                                                @RequestParam int priceOfProduct) {
+    public @ResponseBody String addNewProduct (@RequestParam (value = "name")  String NameOfFruit,
+                                               @RequestParam  (value = "price") int PriceOfProduct) {
         Products product = new Products();
-        product.setNameOfFruit(nameOfFruit);
-        product.setPriceOfProduct(priceOfProduct);
+        product.setName(NameOfFruit);
+        product.setPrice(PriceOfProduct);
 
         productsRepository.save(product);
-        return "Saved :)";
+        return "Done";
     }
 
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<?> deleteProduct(@PathVariable("id") long id) {
+    public ResponseEntity<?> deleteProduct(@PathVariable("id") int id) {
         return productsRepository.findById(id)
                 .map(record -> {
                     productsRepository.deleteById(id);
@@ -43,22 +41,20 @@ public class ProductsController {
 
 
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Products> updateProduct(@PathVariable("id") long id,
-                                                   @RequestBody Products product) {
+    public ResponseEntity<Products> updateProduct(@PathVariable("id") int id,
+                                                  @RequestBody Products product) {
         return productsRepository.findById(id)
                 .map(record -> {
-                    record.setNameOfFruit(product.getNameOfFruit());
-                    record.setPriceOfProduct(product.getPriceOfProduct());
+                    record.setName(product.getName());
+                    record.setPrice(product.getPrice());
 
                     Products updated = productsRepository.save(product);
                     return ResponseEntity.ok().body(updated);
                 }).orElse(ResponseEntity.notFound().build());
     }
 
-
     @RequestMapping(value = "/allProducts", method = RequestMethod.GET)
     public @ResponseBody Iterable<Products> getAllProducts() {
         return productsRepository.findAll();
     }
 }
-
