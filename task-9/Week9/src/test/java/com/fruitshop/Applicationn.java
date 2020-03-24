@@ -1,4 +1,4 @@
-package com.Products;
+package com.fruitshop;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
