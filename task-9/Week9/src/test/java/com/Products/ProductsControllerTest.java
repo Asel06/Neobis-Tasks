@@ -1,26 +1,15 @@
-package com.Products;
+package com.fruitshop;
 
-import com.fruitshop.Products;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.*;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
-
 import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = Applicationn.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-
+@SpringBootTest( webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProductsControllerTest {
 
     @Autowired
@@ -38,20 +27,21 @@ public class ProductsControllerTest {
 
     @Test
     public void updateProduct(){
-        Products product = restTemplate.getForObject("/products/updateProduct/{id}", Products.class);
+        Products product = restTemplate.getForObject("/products/updateProduct/{id}", Products.class, 7777777);
         product.setName(product.getName());
         product.setPrice(product.getPrice());
-        restTemplate.put( "/product/updateProduct/{id}", product);
-        Products updateProduct = restTemplate.getForObject("/product/updateProduct/{id}", Products.class);
+        restTemplate.put( "/product/updateProduct/{id}", product, 7777777);
+        Products updateProduct = restTemplate.getForObject("/product/updateProduct/{id}", Products.class, 7777777);
         assertNotNull(updateProduct);
     }
     @Test
     public void deleteProduct(){
-        Products product = restTemplate.getForObject("/product/deleteProduct/{id}", Products.class);
+
+        Products product = restTemplate.getForObject("/product/deleteProduct/{id}", Products.class,7777777 /* uri variable is needed as u have {id} template here*/);
         assertNotNull(product);
-        restTemplate.delete("/product/deleteProduct/{id}");
+        restTemplate.delete("/product/deleteProduct/{id}",7777777);
         try {
-            product = restTemplate.getForObject("/product/deleteCpu/deleteProduct/{id}", Products.class);
+            product = restTemplate.getForObject("/product/deleteCpu/deleteProduct/{id}", Products.class, 7777777 /*and here*/);
         } catch (final HttpClientErrorException exception){
             assertEquals(exception.getStatusCode(), HttpStatus.NOT_FOUND);
         }
@@ -60,7 +50,7 @@ public class ProductsControllerTest {
     public void getAllProducts() {
         HttpHeaders httpHeaders = new HttpHeaders();
         HttpEntity<String> entity = new HttpEntity<String>(null, httpHeaders);
-        ResponseEntity<String> response = restTemplate.exchange("http://localhost:8888/products/allProducts" ,
+        ResponseEntity<String> response = restTemplate.exchange("/products/addProduct" ,
                 HttpMethod.GET, entity, String.class);
         assertNotNull(response.getBody());
     }
