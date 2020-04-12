@@ -36,10 +36,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -132,17 +132,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586146889211" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1586151706594">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1586195010488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586151706594" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586195010488" />
     <state x="424" y="106" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1585830624883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="106" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1366.728@0.0.1366.728" timestamp="1585830624883" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1586144186832">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1586472940468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586144186832" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586472940468" />
   </component>
 </project>
