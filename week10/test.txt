@@ -1,0 +1,4 @@
+enter into browser: ```192.168.99.100:8080/products/allProducts```
+192.168.99.100 is your machine IP
+
+you should see the data you entered
