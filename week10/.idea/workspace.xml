@@ -46,7 +46,7 @@
       <recent name="C:\Users\iviiv\IdeaProjects\week10" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fruitshop.Application" />
       <module name="week10" />
@@ -60,8 +60,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -112,26 +121,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1585818140139" />
+    <state x="402" y="86" key="#docker-compose.yml:_Compose_Deployment" timestamp="1586759822002">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="402" y="86" key="#docker-compose.yml:_Compose_Deployment/0.0.1366.728@0.0.1366.728" timestamp="1586759822002" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1585830454105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585830454105" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586146889211">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586781154973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586146889211" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586146889211">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586781154973" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586781154972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586146889211" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586146889210">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586781154972" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586781154954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586146889210" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586146889211">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586781154954" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586781154972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586146889211" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586781154972" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586195010488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -140,9 +153,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="106" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.0.1366.728@0.0.1366.728" timestamp="1585830624883" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1586472940468">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1586776491579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586472940468" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586776491579" />
   </component>
 </project>

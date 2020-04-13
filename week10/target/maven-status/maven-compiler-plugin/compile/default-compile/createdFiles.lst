@@ -1,0 +1,4 @@
+com\fruitshop\Application.class
+com\fruitshop\things\ProductsRepository.class
+com\fruitshop\things\ProductsController.class
+com\fruitshop\things\Products.class

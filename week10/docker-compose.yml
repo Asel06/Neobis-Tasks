@@ -3,15 +3,18 @@ services:
   java:
     container_name: week10c
     build: ./
+    restart: on-failure
     ports:
       - "8080:8080"
     depends_on:
       - db
   db:
     image: mysql
-    container_name: mysql-we
+    container_name: ms10c
     volumes:
-      - ./mysql-data:/var/lib/mysql
+      - ./data/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=fruitshop
+    ports:
+      - "3306:3306"
