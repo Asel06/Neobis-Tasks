@@ -5,7 +5,7 @@ public class Products {
         private int id;
         private String name;
         private int price;
-        Products() {}
+        public Products() {}
 
         public int getId() {
                 return id;
